@@ -1,0 +1,28 @@
+/*falta background image ondas para .cuerpoSeccion-Productos*/
+
+.tituloMenu{
+    color: black;
+    background-color: rgb(165, 233, 199);
+    font-size: 5rem;
+    padding:10px;
+    margin: 50px;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    display: block;
+}
+
+.menu{
+    border: solid black;
+    padding: 80px;
+    margin: 50px;
+    background-color: white;
+    box-shadow: 40px -16px rgb(193, 223, 223);
+}
+
+.menu h2{
+    font-style: italic;
+    display: block;
+    position: relative;
+    font-size: 4rem;
+}
+

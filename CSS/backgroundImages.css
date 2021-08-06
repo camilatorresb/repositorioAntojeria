@@ -1,0 +1,14 @@
+.footer{
+    background-image: url(../imagenes/fondo\ feathers.png)
+}
+
+.headerIndex{
+    background-image: url(../imagenes/Antojeria\ 1000x300px.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cuerpoSeccion-Productos{
+    background-image: url(../imagenes/Fondo\ ondas\ .png);
+}

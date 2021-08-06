@@ -1,0 +1,18 @@
+@import "footer.scss";
+@import "Index.scss";
+@import "nav.scss";
+@import "gridSecciones.scss";
+@import "productos.scss";
+@import "pedido.scss";
+@import "eventos.scss";
+@import "formulario.scss";
+
+html { /* etiqueta raíz */
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}

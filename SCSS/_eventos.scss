@@ -1,0 +1,42 @@
+
+.contenedorImagenes-Eventos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    gap: 5px;
+}
+
+.contenedorImagenes-Eventos img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.contenedorImagenes-Eventos img:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.tituloEventos{
+    text-align: center;
+    font-size: 5rem;
+    background-color: rgb(238, 86, 26);
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.tituloEventos :hover{
+    background-color: red;
+}
+
+.cuerpoSeccion-eventos{
+    background-color: rgb(211, 184, 110);
+}
+.contenedorTexto-eventos{
+    font-size: 2rem;
+    margin: 70px;
+    text-align: center;
+}

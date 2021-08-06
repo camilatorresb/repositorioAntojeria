@@ -1,0 +1,158 @@
+    /*FALTA AGREGAR IMAGEN DE FONDO .EVENTOS | falta poner imagen background-image de antojeria*/
+
+.seccion__principal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
+    margin: 50px;
+    }
+
+.seccion__principal-titulo {
+    flex: 0 1 auto;
+    align-self: auto;
+    font-family: 'Signika Negative', sans-serif;
+    }
+
+.seccion__principal-imagenes {
+    flex: 0 1 auto;
+    align-self: auto;
+    padding:30px;
+    }
+
+.seccion__principal-texto {
+    flex: 0 1 auto;
+    align-self: auto;
+    justify-content: center;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 2rem;
+    text-align:center;
+    }
+
+.seccion__principal-imagenesEventos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+.seccion__principal-itemEventos{
+    order:0;
+    flex: 0 1 auto;
+    align-self: auto;
+    margin: 20px;
+    border: black dotted;
+    padding: 20px;
+}
+
+.seccion__principal-tituloEventos{
+    font-size: 3rem;
+    background-color: rgb(13, 15, 14);
+}
+
+.imagen-nosotros{
+    height: 200px;
+    width: 300px;
+    }
+
+#quienesSomos{
+    font-size: 5rem ;
+}
+
+
+/*----------DISEÑO INDEX---------------*/
+
+.tituloIndex{
+    display: none;
+}
+
+.textoCarousel{
+    color: rgb(219, 180, 180);
+    font-size: 4rem;
+    margin: 10px 20px;
+    font-family: 'Fjalla One', sans-serif;
+    text-align:center;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color:white;
+}
+
+a:hover{
+    background-color: rgb(240, 237, 101);
+}
+
+
+.pedidos{
+    background-color: rgb(206, 236, 247);
+    overflow: auto;
+}
+
+.nosotros{
+    background-color: rgb(211, 184, 110);
+    overflow: auto;
+}
+
+.seccion__pedidos{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20%;
+}
+
+.seccion__pedido-titulo{
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 5rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+.contenedor{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.75fr 0.75fr 0.75fr 0.2fr;
+    grid-template-areas: 
+    "header header header header"
+    "productos productos productos productos"
+    "eventos eventos eventos eventos"
+    "pedidos pedidos nosotros nosotros"
+    "footer footer footer footer"
+}
+
+.headerIndex{grid-area: header;}
+.productos{grid-area: productos;}
+.eventos{grid-area: eventos;}
+.pedidos{grid-area: pedidos;}
+.nosotros{grid-area: nosotros;}
+.footer{grid-area:footer;}
+
+
+@media screen and (max-width: 768px) {
+    .seccion__pedido-titulo{
+        font-size: 3rem;
+    }
+    .contenedor{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 0.25fr 0.25fr 0.25fr 0.25fr 0.1fr;
+        grid-template-areas: 
+        "header header"
+        "productos productos"
+        "eventos eventos"
+        "pedidos pedidos"
+        "nosotros nosotros"
+        "footer footer  "
+    }
+    
+    .headerIndex{grid-area: header;}
+    .productos{grid-area: productos;}
+    .eventos{grid-area: eventos;}
+    .pedidos{grid-area: pedidos;}
+    .nosotros{grid-area: nosotros;}
+    .footer{grid-area:footer;}
+    
+}

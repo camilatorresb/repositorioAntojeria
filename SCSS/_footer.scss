@@ -1,0 +1,27 @@
+/*FALTA AGREGAR FONDO FOOTER LEAFS*/ 
+
+.footer{
+    text-align: left;
+    font-size: 1.50rem;
+    font-style: italic;
+    text-decoration: none;
+    color: rgb(27, 29, 26);
+    font-family: 'Signika Negative', sans-serif;
+    }
+
+.footer a:link, a:visited, a:active{
+    color: black;
+}
+
+.footer__container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+        margin: 30px;
+        }
+
+.footer__container a:hover {
+    background: rgb(204, 226, 231);
+}

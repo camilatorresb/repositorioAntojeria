@@ -1,0 +1,343 @@
+@charset "UTF-8";
+/*FALTA AGREGAR FONDO FOOTER LEAFS*/
+.footer {
+  text-align: left;
+  font-size: 1.50rem;
+  font-style: italic;
+  text-decoration: none;
+  color: #1b1d1a;
+  font-family: 'Signika Negative', sans-serif; }
+
+.footer a:link, a:visited, a:active {
+  color: black; }
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  margin: 30px; }
+
+.footer__container a:hover {
+  background: #cce2e7; }
+
+/*FALTA AGREGAR IMAGEN DE FONDO .EVENTOS | falta poner imagen background-image de antojeria*/
+.seccion__principal {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+  margin: 50px; }
+
+.seccion__principal-titulo {
+  flex: 0 1 auto;
+  align-self: auto;
+  font-family: 'Signika Negative', sans-serif; }
+
+.seccion__principal-imagenes {
+  flex: 0 1 auto;
+  align-self: auto;
+  padding: 30px; }
+
+.seccion__principal-texto {
+  flex: 0 1 auto;
+  align-self: auto;
+  justify-content: center;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 2rem;
+  text-align: center; }
+
+.seccion__principal-imagenesEventos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start; }
+
+.seccion__principal-itemEventos {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  margin: 20px;
+  border: black dotted;
+  padding: 20px; }
+
+.seccion__principal-tituloEventos {
+  font-size: 3rem;
+  background-color: #0d0f0e; }
+
+.imagen-nosotros {
+  height: 200px;
+  width: 300px; }
+
+#quienesSomos {
+  font-size: 5rem; }
+
+/*----------DISEÑO INDEX---------------*/
+.tituloIndex {
+  display: none; }
+
+.textoCarousel {
+  color: #dbb4b4;
+  font-size: 4rem;
+  margin: 10px 20px;
+  font-family: 'Fjalla One', sans-serif;
+  text-align: center; }
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+  color: white; }
+
+a:hover {
+  background-color: #f0ed65; }
+
+.pedidos {
+  background-color: #ceecf7;
+  overflow: auto; }
+
+.nosotros {
+  background-color: #d3b86e;
+  overflow: auto; }
+
+.seccion__pedidos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20%; }
+
+.seccion__pedido-titulo {
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 5rem;
+  text-decoration: underline;
+  text-align: center; }
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.75fr 0.75fr 0.75fr 0.2fr;
+  grid-template-areas: "header header header header" "productos productos productos productos" "eventos eventos eventos eventos" "pedidos pedidos nosotros nosotros" "footer footer footer footer"; }
+
+.headerIndex {
+  grid-area: header; }
+
+.productos {
+  grid-area: productos; }
+
+.eventos {
+  grid-area: eventos; }
+
+.pedidos {
+  grid-area: pedidos; }
+
+.nosotros {
+  grid-area: nosotros; }
+
+.footer {
+  grid-area: footer; }
+
+@media screen and (max-width: 768px) {
+  .seccion__pedido-titulo {
+    font-size: 3rem; }
+  .contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 0.25fr 0.25fr 0.25fr 0.25fr 0.1fr;
+    grid-template-areas: "header header" "productos productos" "eventos eventos" "pedidos pedidos" "nosotros nosotros" "footer footer  "; }
+  .headerIndex {
+    grid-area: header; }
+  .productos {
+    grid-area: productos; }
+  .eventos {
+    grid-area: eventos; }
+  .pedidos {
+    grid-area: pedidos; }
+  .nosotros {
+    grid-area: nosotros; }
+  .footer {
+    grid-area: footer; } }
+
+.navegador {
+  background: none;
+  font-size: 1.75rem;
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 700;
+  border: 50px; }
+
+.contenedorSeccion {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 2fr 0.3fr;
+  grid-template-areas: "header header header " "cuerpo cuerpo cuerpo " "footer footer footer "; }
+
+.headerSeccion {
+  grid-area: header; }
+
+.cuerpoSeccion {
+  grid-area: cuerpo; }
+
+.footer {
+  grid-area: footer; }
+
+/*falta background image ondas para .cuerpoSeccion-Productos*/
+.tituloMenu {
+  color: black;
+  background-color: #a5e9c7;
+  font-size: 5rem;
+  padding: 10px;
+  margin: 50px;
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+  display: block; }
+
+.menu {
+  border: solid black;
+  padding: 80px;
+  margin: 50px;
+  background-color: white;
+  box-shadow: 40px -16px #c1dfdf; }
+
+.menu h2 {
+  font-style: italic;
+  display: block;
+  position: relative;
+  font-size: 4rem; }
+
+.seccionPedidosTexto {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 50px;
+  text-align: center; }
+
+.tituloPedido {
+  font-size: 10rem;
+  font-style: bold;
+  font-weight: 700;
+  text-align: center;
+  background-color: white;
+  animation-name: example;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite; }
+
+@keyframes example {
+  from {
+    background-color: #bef147; }
+  to {
+    background-color: #f8f84d; } }
+
+.parrafoPedido1 {
+  font-size: 2rem;
+  font-style: bold;
+  color: #110f0f;
+  font-weight: 400;
+  border: #110f0f dashed; }
+
+.parrafoPedido2 {
+  font-size: 4rem;
+  display: inline-block;
+  font-weight: 600; }
+
+.linkProductos {
+  background-color: #fdfdfd;
+  color: #2a2b29 !important;
+  font-weight: bold; }
+
+.linkProductos :hover {
+  background-color: red; }
+
+.parrafoPedido3 {
+  font-size: 3rem; }
+
+.resaltar {
+  background-image: linear-gradient(#ffd900, #ffd900);
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-size: 100% 2px;
+  transition: background-size .5s, background-position .3s ease-in .5s; }
+
+.resaltar:hover {
+  background-size: 100% 100%;
+  background-position: 0% 0%; }
+
+.parrafoPedido4 {
+  font-size: 2.25rem;
+  font-style: italic;
+  font-weight: bold; }
+
+.parrafoPedido5 {
+  font-size: 2rem; }
+
+.parrafoPedido6 {
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 700; }
+
+.parrafoPedido6 a:link, a:active {
+  background-color: #a5e9c7 !important; }
+
+.parrafoPedido6 a:hover {
+  background-color: #60da9d; }
+
+.contenedorImagenes-Eventos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 50px;
+  justify-content: center;
+  background-color: white;
+  gap: 5px; }
+
+.contenedorImagenes-Eventos img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover; }
+
+.contenedorImagenes-Eventos img:hover {
+  opacity: 0.5;
+  transition: 0.5s; }
+
+.tituloEventos {
+  text-align: center;
+  font-size: 5rem;
+  background-color: #ee561a;
+  color: white;
+  font-family: 'Fjalla One', sans-serif; }
+
+.tituloEventos :hover {
+  background-color: red; }
+
+.cuerpoSeccion-eventos {
+  background-color: #d3b86e; }
+
+.contenedorTexto-eventos {
+  font-size: 2rem;
+  margin: 70px;
+  text-align: center; }
+
+.tituloFormulario {
+  text-align: center;
+  font-size: 5rem;
+  background-color: #83f1be;
+  font-family: 'Josefin Sans', sans-serif; }
+
+.formulario {
+  background-color: #a1cabc;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  font-size: 1.25rem;
+  text-align: center; }
+
+#colorBotonEnviar {
+  background-color: #6ff5df; }
+
+html {
+  /* etiqueta raíz */
+  font-size: 62.5%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
