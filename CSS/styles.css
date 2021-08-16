@@ -22,7 +22,6 @@
 .footer__container a:hover {
   background: #cce2e7; }
 
-/*FALTA AGREGAR IMAGEN DE FONDO .EVENTOS | falta poner imagen background-image de antojeria*/
 .seccion__principal {
   display: flex;
   flex-direction: column;
@@ -315,20 +314,12 @@ a:hover {
   margin: 70px;
   text-align: center; }
 
-.tituloFormulario {
-  text-align: center;
-  font-size: 5rem;
-  background-color: #83f1be;
-  font-family: 'Josefin Sans', sans-serif; }
-
 .formulario {
-  background-color: #a1cabc;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  height: 400px;
   font-size: 1.25rem;
-  text-align: center; }
+  text-align: left; }
 
 #colorBotonEnviar {
   background-color: #6ff5df; }
