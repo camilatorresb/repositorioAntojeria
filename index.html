@@ -15,13 +15,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;700&display=swap" rel="stylesheet">
-    <title>Home de La Antojeria Buenos Aires</title>
+    <title>La Antojeria Buenos Aires</title>
     <meta name="description" content="Sitio web de la pastelería La Antojería: encontrás desde las mejores versiones de tortas clásicas hasta cookies, brownies y budines (Opciones veganas disponibles) Tomamos pedidos individuales y eventos"> 
 </head>
 
 <body>
     <div class="contenedor">
-
         <header class="headerIndex">
             <nav class="navegador">
                 <nav class="navbar navbar-expand-lg navbar-light">
@@ -51,7 +50,6 @@
                     </div>
                 </nav>
         </header>
-        <h1 class="tituloIndex">Website de La Antojería - Casa de Pastelería en Buenos Aires</h1>
         <section class="productos">
             <div class="seccion__principal">
                 <div class="seccion__principal-imagenes">
@@ -63,21 +61,21 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
+                            <img src="imagenes/Apple Crumble.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Visitá nuestra sección productos </h3>
+                            </div>
+                            </div>
+                            <div class="carousel-item">
                             <img src="imagenes/Roles de canela.png" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h2 class="textoCarousel" > <a href="Productos.html"> Visitá nuestra sección productos</h2> </a>
+                                <h3>Visitá nuestra sección productos </h3>
                             </div>
                             </div>
                             <div class="carousel-item">
                             <img src="imagenes/Bizcochuelo frosting.png" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h2 class="textoCarousel"> <a href="Productos.html"> Visita nuestra sección productos</h2>  </a>
-                            </div>
-                            </div>
-                            <div class="carousel-item">
-                            <img src="imagenes/Apple Crumble.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h2 class="textoCarousel"> <a href="Productos.html"> Visita nuestra sección productos</h2>  </a>
+                                <h3>Visitá nuestra sección productos </h3>
                             </div>
                             </div>
                         </div>
@@ -152,8 +150,40 @@
                     <p>Seguinos en <a href="https://www.instagram.com/antojeria.ba/">  Instagram  </a> </p>
                     <p>Disfrutá de nuestra lista de Spotify </p>
                     <p>© Copyright 2021 | CTB </p>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Contactanos!
+                        </button>
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Nos podés dejar tus comentarios, consultas o pedidos completando nuestro formulario. También te podés suscribir y recibir las novedades en tu correo electrónico</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="formulario">
+                                        <form action="#" method="GET" enctype="text/plain">
+                                            <label for="inputNombre">Nombre </label>
+                                            <input type="text" id="inputid" name="inputNombre" value=""> </p> 
+                                            <label for= "correoelectronico"> Correo electrónico </label> <input type="e-mail" id="inputid" name="Correoelectronico" placeholder="nombre@ejemplo.com" name="inputcorreo" value=""> </p> 
+                                            <p>  Dejanos tu Comentarios/consultas/pedidos/sugerencias <textarea></textarea> </p>
+                                            <p> Cómo nos conociste? <select>
+                                                                    <option> Recomendación conocidos/amigos</option>
+                                                                    <option>  Redes sociales </option>
+                                                                    <option> Publicidad en internet </option>
+                                                                    </select></p>
+                                            <label for="acepta"> Querés recibir novedades a tu e-mail? </label>
+                                            <input type="checkbox" name="acepta" value="1" >       
+                                            <input id="colorBotonEnviar" type="submit" value="Enviar formulario">
+                                            <input type="reset" value="Limpiar formulario"/>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
                 </div>
-            </div>
         </footer>
 
     </div> 
