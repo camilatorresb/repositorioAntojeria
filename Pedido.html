@@ -59,7 +59,39 @@
                 <p class="parrafoPedido3">Tomamos los pedidos mediante el formulario o por whatsapp. Una vez que nos contactemos con vos para confirmarlo, arreglamos el envío para el día que lo necesites. </p>
                 <p class="parrafoPedido4"> Nuestra cocina se encuentra en el barrio de Núñez y por el momento <span class="resaltar"> sólo llegamos a CABA y Vicente López </span> </p> 
                 <p class="parrafoPedido5"> No llegamos a tu zona? No te preocupes! Coordinando previamente podés pasar a retirar tu pedido sin problema</p>
-                <p class="parrafoPedido6"> Si tenés dudas, inquietudes o querés escribirnos, completá el <a href="Contactanos.html"> formulario</a> y nos contactamos con vos lo antes posible. </p>
+                <p class="parrafoPedido6"> Si tenés dudas, inquietudes o querés escribirnos, completá el <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Formulario
+                </button>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Nos podés dejar tus comentarios, consultas o pedidos completando nuestro formulario. También te podés suscribir y recibir las novedades en tu correo electrónico</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="formulario">
+                                <form action="#" method="GET" enctype="text/plain">
+                                    <label for="inputNombre">Nombre </label>
+                                    <input type="text" id="inputid" name="inputNombre" value=""> </p> 
+                                    <label for= "correoelectronico"> Correo electrónico </label> <input type="e-mail" id="inputid" name="Correoelectronico" placeholder="nombre@ejemplo.com" name="inputcorreo" value=""> </p> 
+                                    <p>  Dejanos tu Comentarios/consultas/pedidos/sugerencias <textarea></textarea> </p>
+                                    <p> Cómo nos conociste? <select>
+                                                            <option> Recomendación conocidos/amigos</option>
+                                                            <option>  Redes sociales </option>
+                                                            <option> Publicidad en internet </option>
+                                                            </select></p>
+                                    <label for="acepta"> Querés recibir novedades a tu e-mail? </label>
+                                    <input type="checkbox" name="acepta" value="1" >       
+                                    <input id="colorBotonEnviar" type="submit" value="Enviar formulario">
+                                    <input type="reset" value="Limpiar formulario"/>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar </button>
+                        </div>
+                    </div>
+                </div> y nos contactamos con vos lo antes posible. </p>
             </section>
             </div>
 
